@@ -2,6 +2,10 @@ baseURL = '/'
 languageCode = 'fa'
 title = 'گروه کاربری نرم‌افزار آزاد'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [markup.goldmark.parser.attribute]
 block = true
 title = true
@@ -17,4 +21,3 @@ title = true
 [[menu.main]]
     name = "رویدادها"
     url = "/events"
-
