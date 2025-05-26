@@ -1,0 +1,8 @@
+<footer id="footer">
+  <p>
+    <span>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; ۱۴۰۳ <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a> {{end}}</span>
+  </p>
+
+  {{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
+  <script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous" async></script>
+</footer>

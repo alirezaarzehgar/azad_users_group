@@ -1,0 +1,20 @@
+baseURL = '/'
+languageCode = 'fa'
+title = 'گروه کاربری نرم‌افزار آزاد'
+
+[markup.goldmark.parser.attribute]
+block = true
+title = true
+
+[[menu.main]]
+    name = "آزادلاگ"
+    url = "/lug"
+
+[[menu.main]]
+    name = "آزادبلاگ"
+    url = "/blog"
+
+[[menu.main]]
+    name = "رویدادها"
+    url = "/events"
+
